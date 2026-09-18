@@ -97,3 +97,54 @@
 //let name = birthdayVisitors[1]; //return Batians name [1]-> Platz 2 Liste
 
 // Schleife mit Nummern 1-10
+//for (let i = 1; i < 11; i++){
+    //console.log(i)
+//}
+
+//let zahl = 0; 
+//while (zahl < 10) {
+    //zahl = zahl + 1; 
+    //console.log(zahl);
+//}
+
+//let zahl=0;
+/*do {
+    zahl = zahl +1;
+    console.log(zahl)}
+while (zahl < 10 );
+*/
+
+const ergebnis = document.getElementById("ergebnis");
+const B1 = document.getElementById("B1"); 
+const B2 = document.getElementById("B2"); 
+const B3 = document.getElementById("B3");
+
+B1.addEventListener("click", ()=> {
+    ergebnis.textContent ="Falsch. Neuer Versuch!";  
+}); 
+
+B2.addEventListener("click", ()=> {
+    B2.style.backgroundColor="green";
+    ergebnis.textContent = "Richtig!";  
+});
+
+B3.addEventListener("click", ()=> {
+    ergebnis.textContent= "Falsch. Neuer Versuch!"
+});
+
+const B4 = document.getElementById("B4"); 
+const B5 = document.getElementById("B5"); 
+const B6 = document.getElementById("B6");
+
+B4.addEventListener("click", ()=> {
+    ergebnis.textContent ="Falsch. Neuer Versuch!";  
+}); 
+
+B5.addEventListener("click", ()=> {
+    ergebnis.textContent ="Falsch. Neuer Versuch!"; 
+});
+
+B6.addEventListener("click", ()=> {
+    B6.style.backgroundColor="green";
+    ergebnis.textContent = "Richtig!";  
+});
